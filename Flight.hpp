@@ -14,7 +14,8 @@
 using namespace std;
 
 //-------------------------------- FLIGHT CLASS DEFINITION --------------------------------
-class Flight{
+class Flight
+{
 public:
     Flight();
     /*
@@ -167,8 +168,10 @@ public:
      */
 private:
     //-------------------------------- SEAT CLASS DEFINITION --------------------------------
-    class Seat{
+    class Seat
+    {
         friend class Flight;
+
     public:
         Seat();
         /*
@@ -225,7 +228,8 @@ private:
          */
     private:
         //-------------------------------- PASSENGER CLASS DEFINITION --------------------------------
-        class Passenger{
+        class Passenger
+        {
         public:
             Passenger();
             /*
@@ -320,7 +324,7 @@ private:
             string m_id;
         };
         //-------------------------------- END OF PASSENGER CLASS DEFINITION --------------------------------
-        
+
         string m_seatID;
         Passenger m_passenger;
     };
@@ -329,7 +333,7 @@ private:
     string m_flightID;
     int m_rows;
     int m_columns;
-    vector< vector <Seat> > m_seats;
+    vector<vector<Seat> > m_seats;
 };
 //-------------------------------- END OF FLIGHT CLASS DEFINITION --------------------------------
 
